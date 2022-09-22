@@ -7,7 +7,7 @@ int compare(int x, int y);
 int main(void) {
 	int arr_size, target;
 	scanf("%d", &arr_size);
-	int *list = malloc(sizeof(int) * arr_size);
+	int* list = malloc(sizeof *list * arr_size);
 	
 	for(int i = 0; i < arr_size; i++) {
 		scanf("%d", (list + i));
